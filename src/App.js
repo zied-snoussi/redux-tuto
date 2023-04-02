@@ -1,8 +1,10 @@
 import React from "react";
+import { Login, Profile } from "./components/index";
 function App() {
   return (
     <div className="App">
-      <h1>Helllo Redux ! ^_^</h1>
+      <Profile/>
+      <Login/>
     </div>
   );
 }

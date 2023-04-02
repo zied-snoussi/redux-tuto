@@ -13,5 +13,16 @@ code {
 }
 
 .App{
-  text-align: center;
+  font-size: 30px;
+  padding:10%;
+  
+}
+.btn1{
+  width: 100%;
+  padding: 7px;
+  font-size: 20px;
+  background-color:darkgray; 
+}
+.btn1:hover{
+  background-color: aqua;
 }
