@@ -2,13 +2,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const userSlice = createSlice({
     name : "user",
-    initialState : { value: { email: "", nom: "", prenom: "" , adress: "" } },
+    initialState : { value: { username: "", email: "", avatar: "" , gender: "" , role: ""} },
     reducers : {
         login : ( state, action ) => {
             state.value = action.payload
         },
         logout : ( state, action ) => {
-            state.value = { value: { email: "", nom: "", prenom: "" , adress: "" } }
+            state.value =  { value: { username: "", email: "", avatar: "" , gender: "" , role: ""} }
         },
     },
 });

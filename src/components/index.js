@@ -1,3 +1,9 @@
-export { default as Profile } from './Profile';
-export { default as Login } from './Login';
-export { default as Navbar } from './Navbar';
+export { default as Profile } from './Profile.js';
+export { default as Login } from './Login.js';
+export { default as Navbar } from './Navbar.js';
+export { default as Home } from './Home.js';
+export { default as Dashboard } from './Dashboard.js';
+export { default as Admin } from './Admin.js';
+export { default as AlertProtection } from './AlertProtection.js';
+export { default as ProtectedRoute } from './ProtectedRoute.js';
+export { default as ProtectedRouteAdmin } from './ProtectedRouteAdmin.js';

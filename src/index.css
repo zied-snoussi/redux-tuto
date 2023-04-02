@@ -42,6 +42,6 @@ body {
 .sections>li{
   margin: auto 30px;
 }
-.profile{
-  padding-top: 100px;
+.profile,.login,.home,.dashboard,.admin,.none,.notconnected{
+  padding-top: 200px;
 }

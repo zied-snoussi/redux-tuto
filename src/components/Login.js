@@ -1,29 +1,26 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { login, logout } from './features/user';
+import { login } from './features/user';
 function Login() {
     const dispatch = useDispatch()
+    const user1 = { 
+        username: "foulen-fouleni", 
+        email: "foulen@gmail.com", 
+        avatar: "Homme Avatar" , 
+        gender: "M",
+        role: "Admin", 
+    }
     return (
     <div className='login'>
         <button 
         className='btn1'
         onClick={ () => 
             dispatch(
-                login({ 
-                    email: "foulen@gmail.com", 
-                    nom: "fouleni", 
-                    prenom: "foulen" , 
-                    adress: "tunisie, afrique", 
-                })
+                login(user1)
             ) 
         }
         >
         se connecter !{" "}
-        </button>
-        <button 
-        className='btn1'
-        onClick={() => dispatch(logout())}>
-            Deconnexion !{" "}
         </button>
     </div>
   )

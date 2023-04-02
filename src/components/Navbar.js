@@ -1,23 +1,25 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+function Navbar() {
     const state = useSelector( (state) => state.user.value);
     return (
     <div className='navbar'>
         <div>
-            <p>Logo</p>
+            <Link to="/">Logo</Link>
         </div>
         <div>
             <ul className='sections'>
-                <li>Section 1</li>
-                <li>Section 2</li>
-                <li>Section 3</li>
+                <li><Link to="/">Home</Link></li>
+                {state.username?<li><Link to="/dashboard">Dashboard</Link></li>:false}
+                {state.role==="Admin"?<li><Link to="/admin">Admin</Link></li>:false}
             </ul>
         </div>
         <div>
-            {state.nom?<p>{state.prenom+" "+state.nom}</p>:<p>Login</p>}
+            {state.username?<Link to="/profile">{state.username}</Link>:<Link to="/login">Login</Link>}
         </div>
     </div>
   )
 }
+export default Navbar;
