@@ -1,5 +1,5 @@
 import React from "react";
-import { Admin, AlertProtection, Dashboard, Home, Login, Navbar, Profile, ProtectedRoute, ProtectedRouteAdmin } from "./components/index";
+import { Admin, AlertProtection, Dashboard, Home, Login, Navbar, PrivateRoute, Profile, ProtectedRoute } from "./components/index";
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
           </ProtectedRoute>
         }/>
         <Route path='/admin' element={
-          <ProtectedRouteAdmin>
+          <PrivateRoute>
             <Admin/>
-          </ProtectedRouteAdmin>
+          </PrivateRoute>
         }/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/profile' element={<Profile/>}/>

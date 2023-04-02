@@ -6,4 +6,4 @@ export { default as Dashboard } from './Dashboard.js';
 export { default as Admin } from './Admin.js';
 export { default as AlertProtection } from './AlertProtection.js';
 export { default as ProtectedRoute } from './ProtectedRoute.js';
-export { default as ProtectedRouteAdmin } from './ProtectedRouteAdmin.js';
+export { default as PrivateRoute } from './PrivateRoute.js';
